@@ -1,0 +1,42 @@
+{
+  "name": "jupyterlab-apputils-defect",
+  "version": "1.0.0",
+  "description": "Sample JupiterLab extension showing how using a ReactElementWidget as the `body` in showDialog() fails to have styling applied",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daldridge/jupyterlab-apputils-defect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daldridge/jupyterlab-apputils-defect/issues"
+  },
+  "homepage": "https://github.com/daldridge/jupyterlab-apputils-defect#readme",
+  "files": [
+    "lib/**/*.{css,d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "assets/**/*.{eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "0.19.1",
+    "@jupyterlab/mainmenu": "0.8.1",
+    "@jupyterlab/notebook": "0.19.2",
+    "@phosphor/widgets": "1.6.0",
+    "react": "16.8.6"
+  },
+  "jupyterlab": {
+    "extension": true
+  },
+  "devDependencies": {
+    "@types/react": "16.4.18",
+    "tslint": "5.16.0",
+    "tslint-react": "4.0.0",
+    "typescript": "3.4.5"
+  }
+}
